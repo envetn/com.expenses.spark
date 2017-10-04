@@ -12,13 +12,12 @@
     </parent>
 
 
-    <groupId>spark</groupId>
+    <groupId>com.example.spark</groupId>
+    <artifactId>sparkRestService</artifactId>
     <name>sparkRestService</name>
-    <artifactId>com.example.spark</artifactId>
     <packaging>pom</packaging>
     <url>http://maven.apache.org</url>
     <version>1.0-SNAPSHOT</version>
-
 
     <modules>
         <module>API</module>
@@ -92,7 +91,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- Jar file entry point -->
-                            <mainClass>StartSpark</mainClass>
+                            <mainClass>com.expenses.spark.api.ManualStart</mainClass>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
                         </manifest>
                     </archive>
